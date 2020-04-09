@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 20%;
+}
+
+
+.logo-splash {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#bm,
+#dash-circ {
+  width: 100%;
+  box-sizing: border-box;
+  flex: none;
+}
+
+#dash-circ {
+  animation: fadeInAnimation ease 2s;
+  animation-delay: 3s; 
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+#bm {
+    width: 90%;
+    animation: fadeInAnimation ease 3s;
+    margin-left: -95%;
+}
+
+.clickable-logo {
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.clickable-logo:hover {
+    transform: scale(0.95);
+}
+
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
